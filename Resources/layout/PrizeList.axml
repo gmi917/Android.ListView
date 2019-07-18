@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="@android:color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="89.5dp"
+        android:id="@+id/relativeLayout1">
+        <LinearLayout
+            android:id="@+id/linearContainer"
+            android:orientation="vertical"
+            android:layout_width="379.0dp"
+            android:layout_height="82.0dp"
+            android:paddingLeft="10dip"
+            android:layout_toRightOf="@+id/imgPrize">
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="20dip"
+                android:textStyle="normal"
+                android:text="Prize Title" />
+            <TextView
+                android:id="@+id/tvPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dip"
+                android:textColor="#E76DA9"
+                android:text="Prize Point"
+                android:layout_marginTop="4.0dp" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="97.5dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_notfound"
+            android:id="@+id/imgPrize"
+            android:layout_marginTop="5dp" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/imgSeparator"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/darker_gray" />
+</LinearLayout>
